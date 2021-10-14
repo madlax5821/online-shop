@@ -1,0 +1,10 @@
+com\xiaofei\shop\serviceImpl\CustomerServiceImpl.class
+com\xiaofei\shop\service\ProductService.class
+com\xiaofei\shop\service\AdministratorService.class
+com\xiaofei\shop\serviceImpl\AdministratorServiceImpl.class
+com\xiaofei\shop\serviceImpl\ProductTypeServiceImpl.class
+com\xiaofei\shop\serviceImpl\ProductServiceImpl.class
+com\xiaofei\shop\service\CustomerService.class
+com\xiaofei\shop\service\ProductTypeService.class
+com\xiaofei\shop\dto\AdminDto.class
+com\xiaofei\shop\dto\ProductDTO.class

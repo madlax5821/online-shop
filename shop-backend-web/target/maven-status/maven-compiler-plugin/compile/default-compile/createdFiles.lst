@@ -1,0 +1,7 @@
+com\xiaofei\shop\vo\ProductVo.class
+com\xiaofei\shop\controller\ProductController.class
+com\xiaofei\shop\controller\CustomerController.class
+com\xiaofei\shop\vo\AdminVo.class
+com\xiaofei\shop\controller\AdminController.class
+com\xiaofei\shop\controller\ProductTypeController.class
+com\xiaofei\shop\controller\CodeController.class

@@ -1,0 +1,58 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xiaofei.shop.dao.ProductTypeDao">
+    <resultMap id="typeMap" type="ProductType">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="status" property="status"/>
+    </resultMap>
+
+    <sql id="typeColumn">id,name,status</sql>
+
+
+    <insert id="saveProductType" useGeneratedKeys="true" keyProperty="id">
+        insert into product_types (name,status) values (#{name},#{status});
+    </insert>
+
+    <delete id="deleteProductTypeById" parameterType="long">
+        delete from product_types
+        where id=#{id};
+    </delete>
+
+    <update id="updateProductTypeNameById">
+        update product_types
+        set name=#{name}
+        where id=#{id}
+    </update>
+
+    <update id="updateProductTypeStatusById">
+        update product_types
+        set status=#{status}
+        where id=#{id}
+    </update>
+
+    <select id="getProductTypes" resultMap="typeMap">
+        select <include refid="typeColumn"/>
+        from product_types
+    </select>
+
+    <select id="getProductTypeById" resultMap="typeMap">
+        select <include refid="typeColumn"/>
+        from product_types
+        where id=#{id};
+    </select>
+
+    <select id="getProductTypeByName" resultMap="typeMap">
+        select <include refid="typeColumn"/>
+        from product_types
+        where name=#{name}
+    </select>
+
+
+
+
+
+
+</mapper>

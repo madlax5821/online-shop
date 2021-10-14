@@ -1,0 +1,6 @@
+com\xiaofei\shop\vo\ProductVo.class
+com\xiaofei\shop\dao\AdministratorDao.class
+com\xiaofei\shop\dao\ProductTypeDao.class
+com\xiaofei\shop\dao\RoleDao.class
+com\xiaofei\shop\dao\ProductDao.class
+com\xiaofei\shop\dao\CustomerDao.class
